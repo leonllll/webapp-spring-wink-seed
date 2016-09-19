@@ -3,7 +3,7 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>webapp-wink-spring-seed</display-name>
+  <display-name>webapp-spring-wink-seed</display-name>
   <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>

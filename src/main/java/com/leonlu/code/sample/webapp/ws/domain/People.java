@@ -4,9 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 @Entity
 public class People {
+	@JsonProperty(access = Access.READ_ONLY) //Jackson JSON on deserialize only
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
@@ -20,9 +23,11 @@ public class People {
 		this.name = name;
 		this.age = age;
 	}
+	
 	public Integer getId() {
 		return id;
 	}
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}

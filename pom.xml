@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.leonlu.code.sample</groupId>
-	<artifactId>webapp-wink-spring-seed</artifactId>
+	<artifactId>webapp-spring-wink-seed</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webapp-wink-spring-seed Maven Webapp</name>
+	<name>webapp-spring-wink-seed Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -109,7 +109,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>webapp-wink-spring-seed</finalName>
+		<finalName>webapp-spring-wink-seed</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>

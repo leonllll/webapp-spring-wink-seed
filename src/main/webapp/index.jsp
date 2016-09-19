@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Welcome to webapp-wink-spring-seed</h2>
+<h2>Welcome to webapp-spring-wink-seed</h2>
 </body>
 </html>

@@ -28,7 +28,7 @@ import com.leonlu.code.sample.webapp.ws.util.JacksonUtil;
 public class PeopleResource {
 	@Autowired
 	private PeopleService peopleService;
-	public final Logger logger = LoggerFactory.getLogger(PeopleResource.class);
+	public static final Logger logger = LoggerFactory.getLogger(PeopleResource.class);
 			
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
@@ -50,7 +50,9 @@ public class PeopleResource {
 		logger.debug("add people: [" + json + ", url: " + uriInfo.getPath() + "]");
 		People people;
 		try {
+			System.out.println(json);
 			people = JacksonUtil.toBean(json, People.class);
+			System.out.println(people.toString());
 		} catch(RuntimeException e) {
 			throw new WebAppException("invalid-json", 400);
 		}
